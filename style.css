@@ -1,5 +1,49 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,700&display=swap');
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
 body {
   background-color: rgba(0, 128, 128, 0.219);
 }
@@ -12,14 +56,47 @@ body {
   position: relative;
 }
 
+.logo-brand img {
+  max-width: 150px;
+  margin-top: -10px;
+}
+
+.ico-linkedin {
+  margin-top: -5px;
+}
+
+#navbarText a {
+  font-size: 14px;
+  text-transform: uppercase;
+  text-underline-offset: 8px;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: #0157F8;
+  text-decoration: underline;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
 .row-banner {
-  height: 650px;
+  height: 100%;
   align-items: center;
 }
 
 .section-banner {
   background: rgb(7, 79, 195);
   background: linear-gradient(90deg, rgba(7, 79, 195, 1) 35%, rgba(5, 100, 255, 1) 100%);
+}
+
+.section-banner p {
+  line-height: 1.2;
+  font-size: clamp(1.5rem, 0.45rem + 2.75vw, 3.75rem);
+}
+
+.banner-image {
+  padding-top: 100px
 }
 
 .navbar-collapse {
@@ -44,13 +121,188 @@ a:hover {
   color: inherit;
 }
 
+#carouselExampleIndicators .carousel-indicators [data-bs-target] {
+  width: 13px;
+  height: 13px;
+  padding: 0;
+  margin-right: 7px;
+  margin-left: 7px;
+  border-radius: 50%;
+}
+
+#carouselExampleIndicators .carousel-indicators .active {
+  opacity: 1;
+  background-color: greenyellow;
+}
+
+.title-green {
+  color: #00FFAA !important;
+}
+
+#carouselExampleIndicators .carousel-inner {
+  padding-top: 100px;
+  color: white;
+  font-size: 30px;
+}
+
+.section-content {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.section-black {
+  background-color: #000;
+  color: white;
+}
+
+.section-blue {
+  background-color: #0157F8;
+  color: white;
+}
+
+.green-card {
+  background-color: #00FFAA;
+  padding: 25px 20px;
+  border-radius: 5px;
+  margin-bottom: -150px;
+  z-index: 9;
+  position: relative;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-gray {
+  background-color: #D1D1D1;
+}
+
+.card,
+.card-header {
+  --bs-card-bg: transparent;
+  background-color: transparent;
+  border: none;
+}
+
+.card-header {
+  border-bottom: none;
+}
+
+.card-body p {
+  line-height: 1rem;
+  margin-bottom: 0;
+}
+
+.card-title {
+  color: #0157F8;
+  font-size: 35px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.card-subtitle {
+  color: #0157F8;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.btn-plateccs {
+  color: #fff;
+  background-color: #000;
+  padding: 10px 30px 10px 15px;
+  border-radius: 5px;
+  font-size: clamp(0.6875rem, 0.6rem + 0.4375vw, 1.125rem);
+  cursor: pointer;
+}
+
+.carousel-item .btn-plateccs {
+  font-size: clamp(1rem, 0.45rem + 2.75vw, 1.3rem);
+}
+
+.section-title {
+  font-size: 45px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.bg-text {
+  background-color: #0157F8;
+  padding: 0 10px;
+}
+
+.content-section b,
+.content-section strong {
+  color: #00FFAA;
+}
+
+#maxima-seguridad .card {
+  padding: 30px 30px;
+  max-height: 180px;
+  align-items: center;
+  justify-content: center;
+}
+
+#maxima-seguridad .title-green {
+  line-height: 3.5rem;
+  font-size: 40px;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  font-size: 15px;
+}
+
+.footer-title {
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  color: #0157F8;
+}
+
+.menu-list li {
+  padding-bottom: 15px;
+}
+
+.border-r {
+  border-right: 1px solid #fff;
+}
+
+.section-top-page {
+  height: 100%;
+  min-height: 400px;
+}
+
 @media screen and (max-width:991px) {
   #navbarText {
     padding: 10px;
   }
+
+  .border-r {
+    border: none;
+  }
 }
 
-@media screen and (max-width:768px) {}
+@media screen and (max-width:768px) {
+  .btn-large img {
+    max-width: 8%;
+  }
+
+  #carouselExampleIndicators .carousel-inner {
+    padding-top: 140px;
+  }
+
+  .banner-image {
+    padding-top: 0;
+  }
+}
 
 @media screen and (max-width: 480px) {}
 
