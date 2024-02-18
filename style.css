@@ -44,10 +44,6 @@
   font-style: italic;
 }
 
-body {
-  background-color: rgba(0, 128, 128, 0.219);
-}
-
 .navbar-plateccs {
   background-color: #fff;
   border-radius: 40px;
@@ -160,6 +156,23 @@ a:hover {
   color: white;
 }
 
+.section-white {
+  color: #0157F8;
+}
+
+.section-black .content-section b,
+.section-black .content-section strong {
+  color: #00FFAA;
+}
+
+#claves-informacion .content-section b,
+#claves-informacion .content-section strong {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
 .green-card {
   background-color: #00FFAA;
   padding: 25px 20px;
@@ -170,15 +183,20 @@ a:hover {
 }
 
 .bg-white {
-  background-color: #fff;
+  background-color: #fff !important;
+}
+
+.bg-green {
+  background-color: #00FFAA !important;
 }
 
 .bg-gray {
-  background-color: #D1D1D1;
+  background-color: #d1d1d136 !important;
 }
 
 .card,
-.card-header {
+.card-header,
+.card-footer {
   --bs-card-bg: transparent;
   background-color: transparent;
   border: none;
@@ -215,6 +233,15 @@ a:hover {
   border-radius: 5px;
   font-size: clamp(0.6875rem, 0.6rem + 0.4375vw, 1.125rem);
   cursor: pointer;
+  border: none;
+}
+
+.btn-blue {
+  background-color: #0157F8;
+}
+
+.btn-arrow {
+  padding: 10px 15px 10px 15px;
 }
 
 .carousel-item .btn-plateccs {
@@ -222,7 +249,7 @@ a:hover {
 }
 
 .section-title {
-  font-size: 45px;
+  font-size: clamp(1.125rem, 0.7875rem + 1.6875vw, 2.8125rem);
   color: #fff;
   font-family: "Poppins", sans-serif;
   font-weight: 800;
@@ -232,11 +259,6 @@ a:hover {
 .bg-text {
   background-color: #0157F8;
   padding: 0 10px;
-}
-
-.content-section b,
-.content-section strong {
-  color: #00FFAA;
 }
 
 #maxima-seguridad .card {
@@ -278,6 +300,114 @@ footer {
 .section-top-page {
   height: 100%;
   min-height: 400px;
+}
+
+.subtitle-top-page {
+  color: #fff;
+}
+
+.subtitle-top-page b,
+.subtitle-top-page strong {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+#claves-informacion .card {
+  width: 300px;
+  padding: 20px 5px 10px 5px;
+}
+
+.card.bg-gray {
+  min-height: 350px;
+}
+
+#elige-servicio {
+  padding-bottom: 300px;
+}
+
+.row-card-servicios {
+  margin-top: -300px;
+}
+
+.col-left-single {
+  padding: 100px 80px;
+}
+
+.card-single-solucion {
+  width: 300px;
+  padding: 20px 5px 10px 5px;
+  background-color: #D1D1D1;
+  min-height: 250px;
+}
+
+.card-single-solucion .card-subtitle {
+  font-size: 1.2rem;
+}
+
+.swiper {
+  width: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 1rem;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 25px;
+  color: #0157F8;
+}
+
+.swiper-container {
+  position: relative;
+  margin: 0 auto;
+}
+
+.swiper-container .swiper-button-prev {
+  left: -40px;
+}
+
+.swiper-container .swiper-button-next {
+  right: -40px;
+}
+
+.swiper-container .swiper-pagination {
+  bottom: -40px !important;
+}
+
+.sample-slider img {
+  width: 100%;
+}
+
+.avatar-testimonial {
+  max-width: 80%;
+}
+
+.title-card-blog {
+  font-size: clamp(1rem, 0.8rem + 1vw, 2rem);
+  line-height: 1.2;
+}
+
+.card-blog p {
+  line-height: 1.2;
+  color: #0157F8;
+}
+
+.card-blog-single .card-text {
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+/* .form-floating>.form-control,
+.form-floating>.form-control-plaintext {
+  padding: 2rem 0.75rem;
+} */
+
+iframe {
+  border-radius: 20px;
 }
 
 @media screen and (max-width:991px) {

@@ -201,3 +201,25 @@ document.addEventListener("DOMContentLoaded", function () {
     iniciarContadorSiVisible();
   });
 });
+
+const swiper = new Swiper(".swiper", {
+  // Optional parameters
+  loop: true,
+  // autoplay: {
+  //   //autoplay
+  //   delay: 2000,
+  // },
+  slidesPerView: 1,
+  spaceBetween: 20,
+  breakpoints: {
+    // when window width is >= 640px
+    991: {
+      slidesPerView: 2,
+    },
+  },
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
